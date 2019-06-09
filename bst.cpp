@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 class node{
 public:
 	int data;
@@ -8,7 +10,7 @@ public:
 	node(int data){
 		this->data = data;
 	}
-}
+};
 
 void showINorder(node *root);
 
@@ -53,14 +55,12 @@ int main()
 // INorder Recursion
 
 void showINorder(node* root){
-	if(root->left == NULL)
-		cout<<root->data<<" ";
-	else
+	if(root->left != NULL)
 		showINorder(root->left);
-
+	cout<<root->data<<" ";
 	if(root->right != NULL)
 		showINorder(root->right);
-
+	
 	return;
 
 } // Need extra endline to cout
