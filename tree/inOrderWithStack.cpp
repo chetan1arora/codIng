@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stack>
 
 using namespace std;
 
@@ -12,7 +13,6 @@ public:
 	}
 };
 
-void showINorder(node *root);
 
 // Recursive approach
 
@@ -32,8 +32,33 @@ node * makeMYtree(node * head,int new_data){
 	return head; // Success
 }
 
+void showinOrderWithStack(node * root){
+
+	stack<node*> s;
+	node *temp;
+	s.push(root);
+	while(s.top() != NULL){
+
+		if(s.top()->left != NULL){
+			s.push(s.top()->left);
+			continue;
+		}
+		while(s.top()->right == NULL){
+			cout<<s.top()->data<<" ";
+			s.pop();
+		}
+		temp = s.top();
+		cout<<temp->data<<" ";
+		s.pop();
+		s.push(temp->right);
+	}
+
+	cout<<endl;
+}
+
 int main()
 {
+	
 	node *head = NULL;
 	int N,data;
 	cin>>N;
@@ -43,25 +68,10 @@ int main()
 	}
 	
 	// Printing
-	showINorder(head);
+	showinOrderWithStack(head);
 	cout<<endl;
 
 
 
 	return 0; // Success
 }
-
-
-// INorder Recursion
-
-void showINorder(node* root){
-	if(root->left != NULL)
-		showINorder(root->left);
-	cout<<root->data<<" ";
-	if(root->right != NULL)
-		showINorder(root->right);
-	
-	return;
-
-} // Need extra endline to cout
- 
