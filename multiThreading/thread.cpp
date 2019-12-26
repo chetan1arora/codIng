@@ -1,14 +1,15 @@
 #include <iostream>
+#include <vector>
 #include <thread>
-#include <chrono>
+#include <mutex>
 using namespace std;
 
-void foo(int a, int b){
-	int c = a*b;
-	c += b;
-	cout<<"this thread is going to sleep for 1 min"<<endl;
-	std::this_thread::sleep_for(std::chrono::minutes(1));
-	cout<<c<<endl;
+std::mutex m;
+
+void foo(int *a){
+	m.lock();
+	*a = *a +1;
+	m.unlock();
 	return;
 }
 
@@ -19,8 +20,14 @@ void foo(int a, int b){
 */
 
 int main(){
-	std::thread t1(foo, 5, 4);
-	cout<<"Waiting for thread t1"<<endl;
-	t1.join();
-	cout<<"t1 finishes"<<endl;
+	int zero = 0;
+	std::vector<std::thread> arr;
+	for(int i=0; i<1000; ++i){
+		arr.push_back(std::thread(foo,&zero));
+	}
+	for(auto t=arr.begin(); t != arr.end(); ++t){
+		(*t).join();
+	}
+	cout<<zero<<endl;
+	return 0;
 }
