@@ -87,31 +87,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/C/Users/Chetan/Desktop/codIng/withoutSTL/heap.c",
-			"settings":
-			{
-				"buffer_size": 668,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Chetan/Desktop/codIng/bst.cpp",
-			"settings":
-			{
-				"buffer_size": 937,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Chetan/Desktop/codIng/tree/bst.cpp",
-			"settings":
-			{
-				"buffer_size": 971,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "Packages/C++/C++ Single File.sublime-build",
 	"build_system_choices":
@@ -141,6 +116,38 @@
 		"selected_items":
 		[
 			[
+				"git pull",
+				"Git: Pull"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git commt",
+				"Git: Amend Commit"
+			],
+			[
+				"git pu",
+				"Git: Push"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"git add all",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
 				"git statu",
 				"Git: Status"
 			],
@@ -153,19 +160,7 @@
 				"Git: Add Current File"
 			],
 			[
-				"git push",
-				"Git: Push Current Branch"
-			],
-			[
 				"git com",
-				"Git: Quick Commit"
-			],
-			[
-				"git add",
-				"Git: Add Current File"
-			],
-			[
-				"git commit",
 				"Git: Quick Commit"
 			],
 			[
@@ -245,6 +240,10 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Chetan/Desktop/codIng/multiThreading/thread.cpp",
+		"/C/Users/Chetan/Desktop/codIng/tree/bst.cpp",
+		"/C/Users/Chetan/Desktop/codIng/withoutSTL/heap.c",
+		"/C/Users/Chetan/Desktop/codIng/bst.cpp",
 		"/C/Users/Chetan/Desktop/codIng/codeNation/sol.cpp",
 		"/C/Users/Chetan/Desktop/codIng/codeNation/elysWithMatrix.cpp",
 		"/C/Users/Chetan/AppData/Local/Temp/SD3A5EB.tmp",
@@ -256,7 +255,6 @@
 		"/C/Users/Chetan/Desktop/CodeChef_long/proxy_chef.cpp",
 		"/C/Users/Chetan/Desktop/CodeChef_long/temp.cpp",
 		"/C/Users/Chetan/Desktop/codIng/inOrderWithStack.cpp",
-		"/C/Users/Chetan/Desktop/codIng/bst.cpp",
 		"/C/Users/Chetan/Desktop/codIng/bst_stack.cpp",
 		"/C/Users/Chetan/Desktop/coding/bst.cpp",
 		"/C/Users/Chetan/Desktop/coding/inorder.cpp",
@@ -310,93 +308,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/C/Users/Chetan/Desktop/codIng/withoutSTL/heap.c",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 668,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								608,
-								608
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/Chetan/Desktop/codIng/bst.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 937,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 360.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/C/Users/Chetan/Desktop/codIng/tree/bst.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 971,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 660.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -406,7 +319,7 @@
 	},
 	"input":
 	{
-		"height": 39.0
+		"height": 41.0
 	},
 	"layout":
 	{
@@ -446,6 +359,10 @@
 	"output.git-init":
 	{
 		"height": 126.0
+	},
+	"output.git-pull":
+	{
+		"height": 138.0
 	},
 	"output.git-push":
 	{
@@ -496,7 +413,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 150.0,
 	"status_bar_visible": true,
 	"template_settings":
